@@ -1,3 +1,4 @@
 #!/bin/sh
 
-sh -c "mix hex.build"
+mix hex.organization auth fortawesome --key $hex_organization_key
+mix hex.publish package --organization fortawesome
